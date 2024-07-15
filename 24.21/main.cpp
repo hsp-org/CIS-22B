@@ -10,7 +10,7 @@ int main() {
 	int price;
 	int quantity;
 
-	// Input for item 1
+	// item 1 input
 	cout << "Item 1" << endl;
 	cout << "Enter the item name:" << endl;
 	getline(cin, name);
@@ -24,9 +24,10 @@ int main() {
 	cin >> quantity;
 	item1.SetQuantity(quantity);
 
-	cin.ignore(); // Ignore the newline character left in the input buffer
+	cin.ignore(); 
 
-	// Input for item 2
+	cout << endl;
+	// item 2 input
 	cout << "Item 2" << endl;
 	cout << "Enter the item name:" << endl;
 	getline(cin, name);
@@ -40,7 +41,7 @@ int main() {
 	cin >> quantity;
 	item2.SetQuantity(quantity);
 
-	// Output the total cost
+	cout << endl;
 	cout << "TOTAL COST" << endl;
 	cout << item1.GetName() << " " << item1.GetQuantity() << " @ $" << item1.GetPrice() << " = $" << (item1.GetPrice() * item1.GetQuantity()) << endl;
 	cout << item2.GetName() << " " << item2.GetQuantity() << " @ $" << item2.GetPrice() << " = $" << (item2.GetPrice() * item2.GetQuantity()) << endl;
