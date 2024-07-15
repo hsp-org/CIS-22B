@@ -45,6 +45,7 @@ int main() {
 	cout << "TOTAL COST" << endl;
 	cout << item1.GetName() << " " << item1.GetQuantity() << " @ $" << item1.GetPrice() << " = $" << (item1.GetPrice() * item1.GetQuantity()) << endl;
 	cout << item2.GetName() << " " << item2.GetQuantity() << " @ $" << item2.GetPrice() << " = $" << (item2.GetPrice() * item2.GetQuantity()) << endl;
+	cout << endl;
 	cout << "Total: $" << ((item1.GetPrice() * item1.GetQuantity()) + (item2.GetPrice() * item2.GetQuantity())) << endl;
 
 	return 0;
