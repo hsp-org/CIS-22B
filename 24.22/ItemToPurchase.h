@@ -10,7 +10,7 @@ class ItemToPurchase {
 public:
     ItemToPurchase();
     ItemToPurchase(string name, string description,
-        int price, int quantity = 0);
+        int price, int quantity = 1);
 
     void SetName(string name);
     void SetDescription(string description);

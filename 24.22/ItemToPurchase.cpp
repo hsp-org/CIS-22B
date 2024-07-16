@@ -1,11 +1,22 @@
-#include "ItemToPurchase.h"
 #include <iostream>
 using namespace std;
 
-ItemToPurchase::ItemToPurchase() : itemName("none"), itemDescription("none"), itemPrice(0), itemQuantity(0) {}
+#include "ItemToPurchase.h"
 
-ItemToPurchase::ItemToPurchase(string name, string description, int price, int quantity) :
-    itemName(name), itemDescription(description), itemPrice(price), itemQuantity(quantity) {}
+ItemToPurchase::ItemToPurchase() {
+    itemName = "none";
+    itemDescription = "none";
+    itemPrice = 0;
+    itemQuantity = 0;
+}
+
+ItemToPurchase::ItemToPurchase(string name, string description,
+    int price, int quantity) {
+    itemName = name;
+    itemDescription = description;
+    itemPrice = price;
+    itemQuantity = quantity;
+}
 
 void ItemToPurchase::SetName(string name) {
     itemName = name;
@@ -40,7 +51,8 @@ int ItemToPurchase::GetQuantity() const {
 }
 
 void ItemToPurchase::PrintItemCost() {
-    cout << itemName << " " << itemQuantity << " @ $" << itemPrice << " = $" << (itemPrice * itemQuantity) << endl;
+    cout << itemName << " " << itemQuantity << " @ $" << itemPrice
+        << " = $" << itemPrice * itemQuantity << endl;
 }
 
 void ItemToPurchase::PrintItemDescription() {
